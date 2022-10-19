@@ -1,0 +1,227 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+
+body{
+	font-family: Lato;
+	color: #424551;
+}
+
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+/* ----------------------------------------------- */
+
+.header{
+	padding: 30px;
+	background-color: #794f45;
+	margin-bottom: 120px;
+}
+
+.main {
+}
+.main-about__container {
+}
+.main-about-block {
+}
+.main-about-block-title {
+	font-weight: 900;
+font-size: 46px;
+line-height: 1.3;
+color: #1E212C;
+margin-bottom: 30px;
+}
+.main-about-block p{
+	font-weight: 400;
+font-size: 16px;
+line-height: 1.6;
+color: #424551;
+margin-bottom: 15px;
+}
+
+.main-about-block p:nth-child(even) {
+background-color: chartreuse;
+}
+.main-about-block p:nth-child(odd):hover {
+background-color: darkgoldenrod;
+text-decoration: underline;
+}
+
+.list {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.list li{
+	font-size: 16px;
+line-height: 160%;
+color: #424551;
+}
+
+.list li::before{
+	content: "";
+	background: url('../img/check.svg') 0 0 no-repeat; 
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+	
+}
+.list li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+h3{
+	font-weight: 700;
+font-size: 28px;
+line-height: 1.5;
+color: #1E212C;
+margin-top: 48px;
+margin-bottom: 24px;
+}
+
+h4{
+	font-weight: 700;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #1E212C;
+margin-bottom: 10px;
+}
+
+.sub-title {
+	font-size: 20px;
+line-height: 1.5;
+color: #787A80;
+margin-bottom: 32px;
+
+}
+.rate {
+	font-weight: 700;
+font-size: 16px;
+line-height: 1.6;
+color: #424551;
+margin-bottom: 35px;
+
+}
+
+.rate1::before{
+	content: "";
+	background: url('../img/Star.svg');
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.rate2::before {
+	content: "";
+	background: url('../img/Play.svg');
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.rate3::before{
+	content: "";
+	background: url('../img/Profile.png');
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+
+.game {
+}
+.game__container {
+width: 1200px;
+height: 900px;
+background-color: lightcyan;
+}
+.game-box1 {
+	text-transform: uppercase;
+	font-size: 16px;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+.game-box2 {
+	width: 25px;
+	height: 150px;
+	background-color: aqua;
+	margin-left: 75px;
+}
+.game-box3 {
+	width: 250px;
+	height: 50px;
+	background-color: aqua;
+	margin-left: 75px;
+}
+.game-box4 {
+	width: 20px;
+	height: 350px;
+	background-color: aqua;
+	margin-left: 305px;
+}
+.game-box5 {
+	width: 200px;
+	height: 15px;
+	background-color: aqua;
+	margin-left: 305px;
+}
+
+.game-box6 {
+	width: 15px;
+	height: 150px;
+	background-color: aqua;
+	margin-left: 490px;
+}
+.game-box7 {
+	width: 650px;
+	height: 10px;
+	background-color: aqua;
+	margin-left: 490px;
+}
+.game-box8 {
+	width: 110px;
+	height: 70px;
+	background-color: aqua;
+	margin-left: 1090px;
+}
+
+.game__container .game-box2,
+.game__container .game-box3,
+.game__container .game-box4,
+.game__container .game-box5,
+.game__container .game-box6,
+.game__container .game-box7,
+.game__container .game-box8{
+visibility: hidden;
+}
+
+.game-box1:hover + .game-box2, .game-box2:hover{
+	visibility: visible;
+}
+
+.game-box2:hover + .game-box3, .game-box3:hover{
+	visibility: visible;
+}
+.game-box3:hover + .game-box4, .game-box4:hover{
+	visibility: visible;
+}
+.game-box4:hover + .game-box5, .game-box5:hover{
+	visibility: visible;
+}
+.game-box5:hover + .game-box6, .game-box6:hover{
+	visibility: visible;
+}
+.game-box6:hover + .game-box7, .game-box7:hover{
+	visibility: visible;
+}
+.game-box7:hover + .game-box8, .game-box8:hover{
+	visibility: visible;
+}
+
